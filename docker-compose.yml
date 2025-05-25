@@ -3,6 +3,7 @@ services:
   renovate:
     build: .
     container_name: renovate-bot
+    restart: 'no'
     environment:
       - GITHUB_TOKEN=${GITHUB_TOKEN}
       - LOG_LEVEL=debug
